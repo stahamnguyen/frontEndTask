@@ -156,6 +156,17 @@ header h1 {
 
 }
 
+@media only screen and (max-width: 768px) {
+    .clear:after,
+    .clear:before {
+    content: " ";
+    display: block;
+    }
+    .clear:after {
+        clear: both;
+    }
+}
+
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
